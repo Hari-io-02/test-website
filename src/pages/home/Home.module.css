@@ -1,0 +1,53 @@
+.grid_card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 600px;
+  height: 510px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.grid_card div {
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.d_1 {
+  grid-column: span 2; /* Stretches across both columns */
+  grid-row: span 3; /* Occupies the first two rows */
+  background: url("/src/assets/images/image 7.png") no-repeat center center;
+}
+
+.d_2 {
+  grid-column: span 1; /* Starts in the left column */
+  grid-row: span 1; /* Occupies one row */
+  background: url("/src/assets/images/image 2.png") no-repeat center center;
+}
+
+.d_3 {
+  grid-column: span 1; /* Starts in the right column */
+  grid-row: span 2;
+  background: url("/src/assets/images/image 3.png") no-repeat center center;
+}
+
+.d_4 {
+  grid-column: span 1; /* Starts in the left column */
+  grid-row: span 2;
+  background: url("/src/assets/images/image 4.png") no-repeat center center;
+}
+
+.d_5 {
+  grid-column: span 1; /* Starts in the right column */
+  grid-row: span 1;
+  background: url("/src/assets/images/image 5.png") no-repeat center center;
+}
+
+@media (max-width: 480px) {
+  .grid_card {
+    scale: 60%;
+    padding: 18px;
+  }
+}

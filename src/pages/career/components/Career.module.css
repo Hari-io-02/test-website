@@ -1,0 +1,32 @@
+.element_1,
+.element_2 {
+  background: conic-gradient(
+    from 90deg at 50% 50%,
+    #f8f8f8 0deg,
+    #000000 0deg,
+    #aaaaaa 108deg,
+    #f8f8f8 360deg
+  );
+  mix-blend-mode: color-dodge;
+}
+
+.layer {
+  background: linear-gradient(
+    180deg,
+    rgba(8, 8, 27, 0.53) 0%,
+    rgba(8, 8, 27, 0) 50%,
+    #08081b 100%
+  );
+}
+
+.flipped {
+  transform: scaleX(-1);
+}
+
+.bg_color {
+  background: rgba(8, 8, 30, 1);
+}
+
+.transition {
+  transition: all 0.5s ease-in-out;
+}

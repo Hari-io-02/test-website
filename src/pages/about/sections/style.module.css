@@ -1,0 +1,68 @@
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "G1 G1 G2 G2 G3 G3"
+    "G1 G1 G2 G2 G3 G3"
+    ". G4 G4 G5 G5 ."
+    ". G4 G4 G5 G5 .";
+}
+
+.G1 {
+  grid-area: G1;
+}
+
+.G2 {
+  grid-area: G2;
+}
+
+.G3 {
+  grid-area: G3;
+}
+
+.G4 {
+  grid-area: G4;
+}
+
+.G5 {
+  grid-area: G5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .card_container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "G1 G1 G2 G2"
+      "G1 G1 G2 G2"
+      "G3 G3 G4 G4"
+      "G3 G3 G5 G5";
+  }
+}
+
+@media (max-width: 768px) {
+  .card_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "G1 G1"
+      "G2 G2"
+      "G3 G3"
+      "G4 G4"
+      "G5 G5";
+  }
+}
+
+@media (max-width: 480px) {
+  .card_container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "G1"
+      "G2"
+      "G3"
+      "G4"
+      "G5";
+  }
+}
